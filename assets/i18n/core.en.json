@@ -1,0 +1,28 @@
+{
+  "CORE": {
+    "BUTTONS": {
+      "OK": "Ok",
+      "CANCEL": "Cancel",
+      "NO": "No",
+      "YES": "Yes",
+      "RETRY": "Retry",
+      "LOGIN": "Login",
+      "CLOSE": "Close",
+      "SAVE": "Save",
+      "RESET": "Reset",
+      "ACCEPT": "Accept",
+      "COPY": "Copy",
+      "DISMISS": "Dismiss"
+    }
+  },
+  "VALIDATION": {
+    "EMAIL": "The value you entered is not a valid email address",
+    "REQUIRED": "This value is required.",
+    "REQUIREDTRUE": "Is not true.",
+    "REQUIREDDATE": "Is not a parsable date",
+    "MINLENGTH": "Does not meet minimum length requirements.",
+    "MAXLENGTH": "Does not meet maximum length requirements.",
+    "MIN": "Below the minimum allowable amount.",
+    "MAX": "Above the maximum allowable amount."
+  }
+}

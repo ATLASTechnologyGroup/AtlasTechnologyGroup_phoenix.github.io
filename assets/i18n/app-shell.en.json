@@ -1,0 +1,16 @@
+{
+    "APPSHELL": {
+        "LOGIN": {
+            "FORGOTPASSWORD": "Forgot Password",
+            "REMEMBERME": "Remember Me",
+            "LOGINERROR": "Username or password incorrect."
+        },
+        "NAV-TREE": {
+            "SEARCH-PLACEHOLDER": "Search",
+            "TOGGLE": "toggle {caption}"
+        },
+        "DB-SELECTOR": {
+            "SEARCH-PLACEHOLDER": "Change your database"
+        }
+    }
+}
