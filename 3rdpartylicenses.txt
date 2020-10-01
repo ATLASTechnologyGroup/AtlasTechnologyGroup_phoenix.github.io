@@ -137,6 +137,8 @@ MIT
 
 @atlas/ui-multi-select
 
+@atlas/ui-synergy
+
 @atlas/util
 ISC
 
