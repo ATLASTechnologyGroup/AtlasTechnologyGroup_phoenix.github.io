@@ -11,6 +11,16 @@
         },
         "DB-SELECTOR": {
             "SEARCH-PLACEHOLDER": "Change your database"
+        },
+        "SEARCHABLE-DROPDOWN": {
+            "MULTI-SELECT": {
+                "NONE-SELECTED": "None selected",
+                "SOME-SELECTED": "{{firstSelected}} (+{{otherSelectedCount}} others)",
+                "ALL-SELECTED": "All Selected",
+                "LIST-ITEM-ARIA-ROLE-DESCRIPTION": "check box",
+                "SELECT-ALL-TOOLTIP": "Select All/None",
+                "INVERT-TOOLTIP": "Invert Selections"
+            }
         }
     }
 }
