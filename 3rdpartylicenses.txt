@@ -102,6 +102,8 @@ MIT
 
 @atlas/ui-highcharts
 
+@atlas/ui-icons
+
 @atlas/ui-multi-select
 
 @atlas/ui-synergy

@@ -21,6 +21,15 @@
                 "SELECT-ALL-TOOLTIP": "Select All/None",
                 "INVERT-TOOLTIP": "Invert Selections"
             }
+        },
+        "PLACEHOLDERINPUT": {
+            "AVAILABLE-SUBSTITUTIONS": "AVAILABLE SUBSTITUTIONS",
+            "PREVIEW": "PREVIEW"
+        },
+        "TIME-INPUT": {
+            "AM": "AM",
+            "PM": "PM",
+            "INVALID-TIME-VALUE": "Invalid time value"
         }
     }
 }

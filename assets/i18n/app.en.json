@@ -1,5 +1,23 @@
 {
   "APP": {
-      "HEADER1": "Atlas App-Shell Demo"
+    "HEADER1": "Phoenix Framework Demo",
+    "APPS-MENU": {
+      "TITLE": "Select Apps"
+    },
+    "PLACEHOLDERINPUT-TEST": {
+      "LABEL": "File Name (Optional)",
+      "PLACEHOLDER": "Build by selecting substitutions",
+      "PREVIEW-LABEL": "Preview:",
+      "CURRENT-DAY-OF-MONTH": "Current Day of Month",
+      "CURRENT-MONTH": "Current Month",
+      "CURRENT-YEAR-FOUR-DIGIT": "Current Year (Four-digit)",
+      "CURRENT-YEAR-TWO-DIGIT": "Current Year (Two-digit)",
+      "LAST-FISCAL-WEEK-END-OF-DAY-OF-MONTH": "Last Fiscal Week End of Day of Month",
+      "LAST-FISCAL-WEEK-END-MONTH-NUMBER": "Last Fiscal Week End Month Number",
+      "LAST-FISCAL-WEEK-END-YEAR-FOUR-DIGIT": "Last Fiscal Week End Year (Four-digit)",
+      "LAST-FISCAL-WEEK-END-YEAR-TWO-DIGIT": "Last Fiscal Week End Year (Two-digit)",
+      "RETAILER-CURRENT-WEEK": "Retailer Current Week",
+      "RETAILER-LAST-WEEK": "Retailer Last Week"
+    }
   }
 }
