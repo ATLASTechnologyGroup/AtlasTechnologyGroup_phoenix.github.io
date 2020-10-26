@@ -4,6 +4,9 @@
     "APPS-MENU": {
       "TITLE": "Select Apps"
     },
+    "SEARCHABLE-DROPDOWN-LIST-TEST": {
+      "SEARCH-PLACEHOLDER": "Search"
+    },
     "PLACEHOLDERINPUT-TEST": {
       "LABEL": "File Name (Optional)",
       "PLACEHOLDER": "Build by selecting substitutions",
