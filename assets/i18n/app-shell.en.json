@@ -5,9 +5,14 @@
             "REMEMBERME": "Remember Me",
             "LOGINERROR": "Username or password incorrect."
         },
+        "FILEUPLOAD": {
+            "FILES-SELECTED": "{{fileCount}} files selected",
+            "RESET": "Reset file selection",
+            "ATTACH": "Attach files"
+        },
         "NAV-TREE": {
             "SEARCH-PLACEHOLDER": "Search",
-            "TOGGLE": "toggle {caption}"
+            "TOGGLE": "toggle {{caption}}"
         },
         "DB-SELECTOR": {
             "SEARCH-PLACEHOLDER": "Change your database"
