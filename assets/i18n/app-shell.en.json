@@ -10,6 +10,9 @@
             "RESET": "Reset file selection",
             "ATTACH": "Attach files"
         },
+        "FILE-DROP-AREA": {
+            "EMPTY-PLACEHOLDER": "Drag & Drop files here"
+        },
         "NAV-TREE": {
             "SEARCH-PLACEHOLDER": "Search",
             "TOGGLE": "toggle {{caption}}"
