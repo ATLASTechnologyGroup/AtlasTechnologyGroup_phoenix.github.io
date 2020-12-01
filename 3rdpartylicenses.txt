@@ -104,6 +104,8 @@ MIT
 
 @atlas/ui-icons
 
+@atlas/ui-rich-text
+
 @atlas/ui-synergy
 
 @atlas/util
@@ -149,6 +151,9 @@ to represent the company, product, or service to which they refer.**
 
 @ngx-translate/core
 MIT
+
+@tinymce/tinymce-angular
+Apache-2.0
 
 ag-grid-angular
 MIT
