@@ -1,0 +1,13 @@
+<form>
+    <mat-form-field appearance="fill">
+        <mat-label>Color</mat-label>
+        <mat-select (selectionChange)="setColor($event)" [value]="color$ | async"
+                    style="text-transform: capitalize">
+            <mat-option *ngFor="let color of colors$ | async" [value]="color"
+                        style="text-transform: capitalize">{{color}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+</form>
+<atlas-button-group>
+    <button [color]="color$ | async" mat-raised-button> Button 1</button>
+</atlas-button-group>

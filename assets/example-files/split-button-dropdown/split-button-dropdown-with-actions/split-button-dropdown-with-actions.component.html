@@ -1,0 +1,16 @@
+<atlas-button-group>
+    <button (click)="action('default')" color="primary" mat-raised-button>Default Action</button>
+    <button #trigger="matMenuTrigger"
+            [atlasSplitDropdown]="trigger"
+            [matMenuTriggerFor]="matActionMenu"
+            color="primary"
+            mat-raised-button>
+        <mat-icon>keyboard_arrow_down</mat-icon>
+    </button>
+    <mat-menu #matActionMenu xPosition="before" yPosition="below">
+        <button (click)="action('Action 1')" mat-menu-item> Action 1</button>
+        <button (click)="action('Action 2')" mat-menu-item> Action 2</button>
+        <button (click)="action('Action 3')" mat-menu-item> Action 3</button>
+        <button (click)="action('Action 4')" mat-menu-item> Action 4</button>
+    </mat-menu>
+</atlas-button-group>
