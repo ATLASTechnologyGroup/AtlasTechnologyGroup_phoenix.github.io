@@ -1,0 +1,15 @@
+<section>
+    <atlas-file-upload-drop-area [value]="model.files.value$ | async" (valueChange)="model.files.update($event)"></atlas-file-upload-drop-area>
+    <mat-form-field style="width: 500px">
+        <mat-label>Select a file</mat-label>
+        <atlas-file-upload-form-field
+                placeholder="Add file here"
+                [formControl]="model.files.formControl"
+                (filesChosen)="fileChosen($event)"></atlas-file-upload-form-field>
+        <mat-hint>
+            Formats: <strong>DOCX, XLSX, JPG, PNG</strong> | Max File Size: <strong>100 MB</strong>
+        </mat-hint>
+        <mat-error>Error</mat-error>
+    </mat-form-field>
+</section>
+<atlas-results-table [files]="model.files.value$ | async"></atlas-results-table>

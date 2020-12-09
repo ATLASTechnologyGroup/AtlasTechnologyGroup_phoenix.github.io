@@ -2,7 +2,6 @@ import { ChangeDetectionStrategy, Component, OnDestroy, OnInit, ViewEncapsulatio
 import { CodeFileModel } from '../../shared-docs/shared-docs-example/code-example/code-file.model';
 import { CodeFileService } from '../../shared-docs/shared-docs-example/code-example/code-file.service';
 import { BehaviorSubject, Subscription } from 'rxjs';
-import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'atlas-button-group-overview',
