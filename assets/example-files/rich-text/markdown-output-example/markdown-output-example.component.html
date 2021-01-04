@@ -1,0 +1,8 @@
+<section>
+    <atlas-rich-text-input [formControl]="model.text.formControl" [darkMode]="isDarkMode$ | async"
+    [config]="configuration$ | async">
+    </atlas-rich-text-input>
+</section>
+<h3 class="compact">Raw Markdown</h3>
+<section [innerHTML]="displayedMarkdown$ | async">
+</section>
