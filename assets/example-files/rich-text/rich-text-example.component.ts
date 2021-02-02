@@ -26,8 +26,13 @@ export class RichTextInputExampleComponent implements OnInit {
     'assets/example-files/rich-text/replacement-text-example/replacement-text-example.component.html',
     'assets/example-files/rich-text/replacement-text-example/replacement-text-example.component.ts'
   ];
-  constructor(private codeFileService: CodeFileService,
-    private translate: TranslateService) { }
+  advancedEditingExample =  [
+    'assets/example-files/rich-text/advanced-editing-example/advanced-editing-example.component.html',
+    'assets/example-files/rich-text/advanced-editing-example/advanced-editing-example.component.ts'
+  ];
+  advancedEditingExample$ = this.codeFileService.loadFiles(this.advancedEditingExample);
+
+  constructor(private codeFileService: CodeFileService) { }
 
   ngOnInit(): void {
     this.subscriptions.add(this.codeFileService.loadFiles(this.basicExample).subscribe(code => {
