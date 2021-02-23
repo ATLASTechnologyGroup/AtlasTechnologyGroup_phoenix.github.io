@@ -38,6 +38,13 @@
             "AM": "AM",
             "PM": "PM",
             "INVALID-TIME-VALUE": "Invalid time value"
+        },
+        "CODE-EDITOR": {
+            "HINT-COUNT": "{{count}} hints(s)",
+            "INFO-COUNT": "{{count}} info(s)",
+            "WARNING-COUNT": "{{count}} warning(s)",
+            "ERROR-COUNT": "{{count}} error(s)",
+            "VALIDATION-MESSAGE": "{{message}} line: {{lineNumber}} column: {{column}}"
         }
     }
 }
