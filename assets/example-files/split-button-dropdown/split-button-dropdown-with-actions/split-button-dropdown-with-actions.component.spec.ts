@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { SplitButtonDropdownWithActionsComponent } from './split-button-dropdown-with-actions.component';
 import { AppShellTestingModule } from '@atlas/ui-app-shell';
-import { SharedModule } from '../../../shared/shared.module';
-import { environment } from '../../../../environments/environment';
+import { SharedModule } from '../../../../shared/shared.module';
+import { environment } from '../../../../../environments/environment';
 
 describe('SplitButtonDropdownWithActionsComponent', () => {
   let component: SplitButtonDropdownWithActionsComponent;

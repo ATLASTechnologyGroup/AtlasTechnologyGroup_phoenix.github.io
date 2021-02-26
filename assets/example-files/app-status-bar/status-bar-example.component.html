@@ -1,0 +1,18 @@
+<atlas-app-sidebar-layout>
+  <atlas-app-header>
+    <primary-header>
+      <header-left>
+        My App
+      </header-left>
+    </primary-header>
+  </atlas-app-header>
+
+  <atlas-app-status-bar
+    [messages]="activeMessages$ | async"
+    (messagesDismissed)="onDismissMessages($event)"
+  ></atlas-app-status-bar>
+
+  <app-content class="container">
+    App Content Goes Here
+  </app-content>
+</atlas-app-sidebar-layout>

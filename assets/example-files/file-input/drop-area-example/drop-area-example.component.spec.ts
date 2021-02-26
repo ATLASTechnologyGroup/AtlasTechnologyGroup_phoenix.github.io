@@ -2,8 +2,8 @@ import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { DropAreaExampleComponent } from './drop-area-example.component';
 import { AppShellTestingModule } from '@atlas/ui-app-shell';
-import { SharedModule } from '../../../shared/shared.module';
-import { environment } from '../../../../environments/environment';
+import { SharedModule } from '../../../../shared/shared.module';
+import { environment } from '../../../../../environments/environment';
 
 describe('DropAreaExampleComponent', () => {
   let component: DropAreaExampleComponent;

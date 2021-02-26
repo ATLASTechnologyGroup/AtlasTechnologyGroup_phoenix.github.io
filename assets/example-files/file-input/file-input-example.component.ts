@@ -1,6 +1,8 @@
-import { ChangeDetectionStrategy, Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { BehaviorSubject, Subscription } from 'rxjs';
-import { CodeFileService } from '../../shared-docs/shared-docs-example/code-example/code-file.service';
+import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
+import { tap } from 'rxjs/operators';
+import { CodeFileService } from '../../../shared/code-file.service';
+import { CodeFileModel } from '../../../shared/models/code-file.model';
 
 @Component({
   selector: 'atlas-file-input-example',
@@ -8,27 +10,22 @@ import { CodeFileService } from '../../shared-docs/shared-docs-example/code-exam
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class FileInputExampleComponent implements OnInit {
-  private subscriptions = new Subscription();
-  withDropAreaExample$ = new BehaviorSubject(null);
-  withoutDropAreaExample$ = new BehaviorSubject(null);
-  withDropAreaExample = [
-    'assets/example-files/file-input/drop-area-example/drop-area-example.component.html',
-    'assets/example-files/file-input/drop-area-example/drop-area-example.component.ts'
-  ];
-  withoutDropAreaExample = [
-    'assets/example-files/file-input/input-only-example/input-only-example.component.html',
-    'assets/example-files/file-input/input-only-example/input-only-example.component.ts'
-  ];
-  constructor(private codeFileService: CodeFileService) { }
+export class FileInputExampleComponent {
+  withDropAreaExample$ = new BehaviorSubject<CodeFileModel[]>(null);
+  withoutDropAreaExample$ = new BehaviorSubject<CodeFileModel[]>(null);
 
-  ngOnInit(): void {
-    this.subscriptions.add(this.codeFileService.loadFiles(this.withDropAreaExample).subscribe(code => {
-      this.withDropAreaExample$.next(code);
-    }));
-    this.subscriptions.add(this.codeFileService.loadFiles(this.withoutDropAreaExample).subscribe(code => {
-      this.withoutDropAreaExample$.next(code);
-    }));
+  constructor(private codeFileService: CodeFileService) {
+    this.codeFileService.loadFiles([
+      'assets/example-files/file-input/drop-area-example/drop-area-example.component.html',
+      'assets/example-files/file-input/drop-area-example/drop-area-example.component.ts'
+    ]).pipe(
+      tap(code => this.withDropAreaExample$.next(code))
+    ).subscribe();
+    this.codeFileService.loadFiles([
+      'assets/example-files/file-input/input-only-example/input-only-example.component.html',
+      'assets/example-files/file-input/input-only-example/input-only-example.component.ts'
+    ]).pipe(
+      tap(code => this.withoutDropAreaExample$.next(code))
+    ).subscribe();
   }
-
 }

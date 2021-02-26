@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnDestroy, OnInit, ViewEncapsulation } from '@angular/core';
-import { CodeFileModel } from '../../shared-docs/shared-docs-example/code-example/code-file.model';
-import { CodeFileService } from '../../shared-docs/shared-docs-example/code-example/code-file.service';
 import { BehaviorSubject, Subscription } from 'rxjs';
+import { CodeFileService } from '../../../shared/code-file.service';
+import { CodeFileModel } from '../../../shared/models/code-file.model';
 
 @Component({
   selector: 'atlas-button-group-overview',

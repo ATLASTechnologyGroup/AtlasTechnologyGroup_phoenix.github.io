@@ -4,7 +4,7 @@ import { FormControlSubject, NgxObservableViewModel, ThemeService, ViewModelSubj
 import { RichTextConfiguration, SupportedOutputs } from '@atlas/ui-rich-text';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { AppThemes } from '../../../app.model';
+import { AppThemes } from '../../../../app.model';
 
 interface ViewModel {
   text: string;

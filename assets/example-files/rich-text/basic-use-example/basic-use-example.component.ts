@@ -1,9 +1,8 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { DomSanitizer } from '@angular/platform-browser';
 import { FormControlSubject, NgxObservableViewModel, ThemeService, ViewModelSubjectMap } from '@atlas/ui-core';
-import { Subject } from 'rxjs';
-import { map, tap } from 'rxjs/operators';
-import { AppThemes } from '../../../app.model';
+import { map } from 'rxjs/operators';
+import { AppThemes } from '../../../../app.model';
 
 interface ViewModel {
   text: string;

@@ -17,6 +17,9 @@
             "SEARCH-PLACEHOLDER": "Search",
             "TOGGLE": "toggle {{caption}}"
         },
+        "APP-STATUS-BAR": {
+            "INDEX": "{{index}}/{{count}}"
+        },
         "DB-SELECTOR": {
             "SEARCH-PLACEHOLDER": "Change your database"
         },

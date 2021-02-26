@@ -2,8 +2,10 @@ import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { SplitDropdownExampleComponent } from './split-dropdown-example.component';
 import { AppShellTestingModule } from '@atlas/ui-app-shell';
-import { SharedModule } from '../../shared/shared.module';
-import { environment } from '../../../environments/environment';
+import { SharedModule } from '../../../shared/shared.module';
+import { environment } from '../../../../environments/environment';
+import { InMemoryCacheService } from '@atlas/ui-core';
+import { AppStartup } from '../../../app.startup';
 
 describe('SplitDropdownExampleComponent', () => {
   let component: SplitDropdownExampleComponent;
@@ -12,6 +14,10 @@ describe('SplitDropdownExampleComponent', () => {
 
   beforeEach(waitForAsync(() => {
     AppShellTestingModule.initializeSuite({
+      providers: [
+        InMemoryCacheService,
+        ...AppStartup
+      ],
       imports: [
         SharedModule
       ],

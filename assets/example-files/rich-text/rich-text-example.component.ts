@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import { BehaviorSubject, Subscription } from 'rxjs';
-import { CodeFileService } from '../../shared-docs/shared-docs-example/code-example/code-file.service';
+import { CodeFileService } from '../../../shared/code-file.service';
 
 @Component({
   selector: 'atlas-rich-text-input-example',

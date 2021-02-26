@@ -1,10 +1,10 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { DomSanitizer } from '@angular/platform-browser';
 import { FormControlSubject, NgxObservableViewModel, ThemeService, ViewModelSubjectMap } from '@atlas/ui-core';
 import { RichTextConfiguration, RichTextDefaultSettings, RichTextFeature } from '@atlas/ui-rich-text';
-import { Observable, of, Subject } from 'rxjs';
-import { map, tap } from 'rxjs/operators';
-import { AppThemes } from '../../../app.model';
+import { Observable, of } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { AppThemes } from '../../../../app.model';
 
 interface ViewModel {
   text: string;

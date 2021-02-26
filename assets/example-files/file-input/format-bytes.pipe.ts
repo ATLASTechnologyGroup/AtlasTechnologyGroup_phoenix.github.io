@@ -1,5 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
+// TODO: Promote this to ui-core
 @Pipe({
   name: 'formatBytes'
 })
