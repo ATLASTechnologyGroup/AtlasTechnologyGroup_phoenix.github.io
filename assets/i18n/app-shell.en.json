@@ -42,6 +42,32 @@
             "PM": "PM",
             "INVALID-TIME-VALUE": "Invalid time value"
         },
+        "SCHEDULING": {
+            "START-DATE-TIME-LABEL": "Start Date & Time",
+            "INTERVAL-LABEL": "Repeat Every",
+            "OCCURRENCE-TYPE-LABEL": "Occurrence Type",
+            "REPEAT-ON-CAPTION": "Repeat on",
+            "NO-DAY-SELECTED-ERROR": "No day selected",
+            "DAY-OF-MONTH-PREFIX": "Monthly on day",
+            "REPEATS-FOREVER-CAPTION": "Repeats forever",
+            "ENDS-ON-DATE-TIME-CAPTION": "Ends on selected date and time",
+            "ENDS-ON-DATE-TIME-PLACEHOLDER": "Ends on",
+            "LIMITED-OCCURRENCES-CAPTION": "Ends after a number of occurrences",
+            "LIMITED-OCCURRENCES-PLACEHOLDER": "Occurrence Count",
+            "DAYS-OF-WEEK": {
+                "SUNDAY": "S",
+                "MONDAY": "M",
+                "TUESDAY": "T",
+                "WEDNESDAY": "W",
+                "THURSDAY": "T",
+                "FRIDAY": "F",
+                "SATURDAY": "S"
+            },
+            "VALIDATION": {
+                "END-DATE-BEFORE-START": "End date occurs before start date",
+                "START-DATE-AFTER-END": "Start date occurs after end date"
+            }
+        },
         "CODE-EDITOR": {
             "HINT-COUNT": "{{count}} hints(s)",
             "INFO-COUNT": "{{count}} info(s)",
