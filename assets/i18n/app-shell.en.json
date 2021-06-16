@@ -23,7 +23,7 @@
         "DB-SELECTOR": {
             "SEARCH-PLACEHOLDER": "Change your database"
         },
-        "SEARCHABLE-DROPDOWN": {
+        "SEARCHABLE": {
             "MULTI-SELECT": {
                 "NONE-SELECTED": "None selected",
                 "SOME-SELECTED": "{{firstSelected}} (+{{otherSelectedCount}} others)",
