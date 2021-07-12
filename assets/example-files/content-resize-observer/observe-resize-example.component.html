@@ -1,8 +1,8 @@
 <mat-form-field style="display: block">
-  <input matInput type="text"
+  <input matInput type="text" #testInput
     placeholder="Test content to add"
     [value]="testContentInput$ | async"
-    (input)="setTestContentInput($event.target.value)" />
+    (input)="setTestContentInput(testInput.value)" />
   <button type="button" mat-icon-button matSuffix (click)="onAddTestContent()">
     <mat-icon>add</mat-icon>
   </button>
