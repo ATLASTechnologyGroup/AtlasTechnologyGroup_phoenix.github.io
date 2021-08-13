@@ -1,0 +1,21 @@
+@mixin dashboarding-basic-use-example-content($atlas-core) {
+  atlas-basic-use-example-content {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  atlas-dashboard-item {
+    &:hover,
+    &:active {
+      atlas-basic-use-example-content {
+        border: 1px solid #000;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@mixin dashboarding-basic-use-example($atlas-core) {
+  atlas-basic-use-example {
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
+    align-items: stretch;
+    height: 800px;
+
+    atlas-dashboard {
+      flex: 1;
+    }
+  }
+}
