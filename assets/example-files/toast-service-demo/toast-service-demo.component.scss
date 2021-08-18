@@ -1,0 +1,7 @@
+@mixin toast-service-demo-core($atlas-core) {
+  .custom-toast-content-b {
+    cursor: pointer;
+
+    @include disable-selection();
+  }
+}

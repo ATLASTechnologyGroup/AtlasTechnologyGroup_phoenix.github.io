@@ -1,0 +1,8 @@
+<button type="button" mat-flat-button color="primary" (click)="showTestToastA()">Test Toast A</button>&nbsp;
+<button type="button" mat-flat-button color="accent" (click)="showTestToastB()">Test Toast B</button>
+
+<ng-template let-context #toastTemplateB>
+  <div class="custom-toast-content-b">
+    <h2>Hello {{context.userName}}!</h2>
+  </div>
+</ng-template>

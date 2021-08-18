@@ -1,0 +1,10 @@
+@mixin toast-service-demo-theme($theme) {
+  $custom-toast-palette-a: map-get($theme, 'primary');
+  $custom-toast-bg-color-a: mat-color($custom-toast-palette-a);
+  $custom-toast-fg-color-a: mat-color($custom-toast-palette-a, '500-contrast');
+
+  .test-custom-toast-class-a {
+    color: $custom-toast-fg-color-a;
+    background-color: $custom-toast-bg-color-a;
+  }
+}
